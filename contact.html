@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+      /* Base Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+      }
+
+      .header,
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        flex-wrap: wrap;
+      }
+
+      .header nav,
+      .footer nav {
+        display: flex;
+        gap: 20px;
+      }
+
+      .header nav a,
+      .footer nav a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding: 5px 10px;
+      }
+
+      .header .button {
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .contact-form {
+        flex: 1;
+        min-width: 300px;
+        max-width: 600px;
+        margin-bottom: 20px;
+      }
+
+      .contact-form h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+
+      .contact-form p {
+        color: #777;
+        margin-bottom: 20px;
+      }
+
+      .contact-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .contact-form input[type="submit"] {
+        width: 100%;
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 15px;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 5px;
+      }
+
+      .image-section {
+        flex: 1;
+        min-width: 300px;
+        max-width: 600px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .image-section img {
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      .footer {
+        margin-top: 40px;
+        border-top: 1px solid #ddd;
+        padding-top: 20px;
+        flex-wrap: wrap;
+      }
+
+      .footer .social-icons {
+        display: flex;
+        gap: 10px;
+      }
+
+      .footer .social-icons a {
+        text-decoration: none;
+        color: black;
+        font-size: 24px;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .main-content {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .header nav,
+        .footer nav {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .header nav a,
+        .footer nav a {
+          padding: 5px 0;
+        }
+
+        .header .button,
+        .footer .social-icons a {
+          margin-top: 10px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 10px;
+          margin: 10px;
+        }
+
+        .contact-form h1 {
+          font-size: 28px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+          width: calc(100% - 10px);
+          padding: 5px;
+        }
+
+        .contact-form input[type="submit"] {
+          padding: 10px;
+          font-size: 16px;
+        }
+
+        .header nav,
+        .footer nav {
+          gap: 10px;
+        }
+
+        .footer .social-icons a {
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="site-name">Site name</div>
+        <nav>
+          <a href="#">Page</a>
+          <a href="#">Page</a>
+          <a href="#">Page</a>
+          <a href="#" class="button">Button</a>
+        </nav>
+      </header>
+
+      <div class="main-content">
+        <div class="contact-form">
+          <h1>Contact us</h1>
+          <p>Subheading for description or instructions</p>
+          <form>
+            <label for="first-name">First name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="Jane"
+            />
+
+            <label for="last-name">Last name</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Smitherton"
+            />
+
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@janesfakedomain.net"
+            />
+
+            <label for="message">Your message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Enter your question or message"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+        <div class="image-section">
+          <img src="Hero Image 2.png" alt="Person in red beanie" />
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="site-name">Site name</div>
+        <nav>
+          <a href="#">Topic</a>
+          <a href="#">Page</a>
+          <a href="#">Page</a>
+          <a href="#">Page</a>
+        </nav>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
