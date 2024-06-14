@@ -4,6 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Article-page</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .main-container {
+        background-color: rgba(250, 128, 114, 0.164);
+        border: 0.2px solid salmon;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 9px 20px;
+        box-shadow: 2px 2px 4px salmon;
+      }
+      .content-header {
+        display: flex;
+        gap: 20px;
+      }
+      .content-header a {
+        text-decoration: none;
+        color: black;
+        padding: 20px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.557);
+        font-size: 23px;
+      }
+      @media (max-width: 768px) {
+        .main-container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .content-header {
+          flex-direction: column;
+          width: 100%;
+          gap: 10px;
+        }
+        .content-header a {
+          padding: 10px;
+          font-size: 20px;
+          text-align: center;
+          width: 100%;
+        }
+        .logo {
+          margin-bottom: 10px;
+        }
+      }
+    </style>
   </head>
-  <body></body>
+
+  <body>
+    <div class="main-container">
+      <div class="logo"><h1>Site Name</h1></div>
+      <div class="content-header">
+        <a href="#">Page</a>
+        <a href="#">Page</a>
+        <a href="#">Page</a>
+        <a class="btn" href="#">Button</a>
+      </div>
+    </div>
+    <div class="main-article">
+      <div class="article">
+        <h1>Article or post title</h1>
+        <h4>
+          Subheading that sets up context, shares more info about the author, or
+          generally gets people psyched to keep reading
+        </h4>
+      </div>
+      <div class="image"><img src="Hero Image.png" alt="" /></div>
+    </div>
+  </body>
 </html>
