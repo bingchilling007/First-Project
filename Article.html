@@ -3,76 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Article-page</title>
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      .main-container {
-        background-color: rgba(250, 128, 114, 0.164);
-        border: 0.2px solid salmon;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 9px 20px;
-        box-shadow: 2px 2px 4px salmon;
-      }
-      .content-header {
-        display: flex;
-        gap: 20px;
-      }
-      .content-header a {
-        text-decoration: none;
-        color: black;
-        padding: 20px;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.557);
-        font-size: 23px;
-      }
-      @media (max-width: 768px) {
-        .main-container {
-          flex-direction: column;
-          align-items: flex-start;
-        }
-        .content-header {
-          flex-direction: column;
-          width: 100%;
-          gap: 10px;
-        }
-        .content-header a {
-          padding: 10px;
-          font-size: 20px;
-          text-align: center;
-          width: 100%;
-        }
-        .logo {
-          margin-bottom: 10px;
-        }
-      }
-    </style>
+    <title>Article Page</title>
+    <link rel="stylesheet" href="Article.css" />
+    <style></style>
   </head>
-
   <body>
-    <div class="main-container">
-      <div class="logo"><h1>Site Name</h1></div>
-      <div class="content-header">
-        <a href="#">Page</a>
-        <a href="#">Page</a>
-        <a href="#">Page</a>
-        <a class="btn" href="#">Button</a>
+    <div class="container">
+      <div class="header">
+        <div class="logo">Site Name</div>
+        <div class="nav">
+          <a href="#">Page</a>
+          <a href="#">Page</a>
+          <a href="#">Page</a>
+          <a class="btn" href="#">Button</a>
+        </div>
       </div>
-    </div>
-    <div class="main-article">
-      <div class="article">
+      <div class="main">
         <h1>Article or post title</h1>
-        <h4>
+        <p>
           Subheading that sets up context, shares more info about the author, or
           generally gets people psyched to keep reading
-        </h4>
+        </p>
+        <img src="Hero Image.png" alt="Hero Image" />
       </div>
-      <div class="image"><img src="Hero Image.png" alt="" /></div>
+      <div class="content">
+        <p>
+          Body text for your whole article or post. We’ll put in some lorem
+          ipsum to show how a filled-out page might look:
+        </p>
+        <p>
+          Excepteur efficient emerging, minim veniam anim aute carefully curated
+          Ginza conversation exquisite perfect nostrud nisi intricate Content.
+          Qui international first-class nulla ut. Punctual adipiscing, essential
+          lovely queen tempor eiusmod irure. Exclusive izakaya charming
+          Scandinavian impeccable aute quality of life soft power pariatur
+          Melbourne occaecat discerning. Qui wardrobe aliqua, et Porter
+          destination Toto remarkable officia Helsinki excepteur Basset hound.
+          Zürich sleepy perfect consectetur.
+        </p>
+        <p>
+          Exquisite sophisticated iconic cutting-edge laborum deserunt Addis
+          Ababa esse bureaux cupidatat id minim. Sharp classic the best commodo
+          nostrud delightful. Conversation aute Rochester id. Qui sunt
+          remarkable deserunt intricate airport handsome K-pop excepteur classic
+          esse Asia-Pacific laboris.
+        </p>
+        <img src="Image (1).png" alt="Secondary Image" />
+        <p>
+          Excepteur efficient emerging, minim veniam anim cloying aute carefully
+          curated gauche. Espresso exquisite perfect nostrud nisi intricate.
+          Punctual adipiscing Borzoi, essential lovely tempor eiusmod irure.
+          Exclusive izakaya charming Quezon City impeccable aute quality of life
+          soft power pariatur occaecat discerning. Qui wardrobe aliqua, et
+          Porter destination Toto remarkable officia Helsinki excepteur Basset
+          hound. Zürich sleepy perfect consectetur.
+        </p>
+      </div>
+      <div class="related-articles">
+        <h2>Related articles or posts</h2>
+        <div class="articles">
+          <div class="article">
+            <img src="Image (2).png" alt="Related Article 1" />
+            <h3>Title</h3>
+            <p>Author</p>
+          </div>
+          <div class="article">
+            <img src="Image (3).png" alt="Related Article 2" />
+            <h3>Title</h3>
+            <p>Author</p>
+          </div>
+          <div class="article">
+            <img src="Image (4).png" alt="Related Article 3" />
+            <h3>Title</h3>
+            <p>Author</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-nav">
+          <div>
+            <h4>Site Name</h4>
+            <a href="#">Page</a>
+            <a href="#">Page</a>
+            <a href="#">Page</a>
+            <a href="#">Page</a>
+          </div>
+          <div>
+            <h4>Topic</h4>
+            <a href="#">Page</a>
+            <a href="#">Page</a>
+            <a href="#">Page</a>
+            <a href="#">Page</a>
+          </div>
+          <div>
+            <h4>Topic</h4>
+            <a href="#">Page</a>
+            <a href="#">Page</a>
+            <a href="#">Page</a>
+            <a href="#">Page</a>
+          </div>
+          <div>
+            <h4>Topic</h4>
+            <a href="#">Page</a>
+            <a href="#">Page</a>
+            <a href="#">Page</a>
+            <a href="#">Page</a>
+          </div>
+        </div>
+        <div class="social">
+          <img src="social1.png" alt="Social Icon 1" />
+          <img src="social2.png" alt="Social Icon 2" />
+          <img src="social3.png" alt="Social Icon 3" />
+        </div>
+      </div>
     </div>
   </body>
 </html>
