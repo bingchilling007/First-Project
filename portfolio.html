@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-page</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+      }
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .nav {
+        display: flex;
+        gap: 20px;
+      }
+      .nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        padding: 10px 15px;
+        transition: background-color 0.3s;
+      }
+      .nav a.btn {
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+      }
+      .nav a:hover {
+        background-color: #ddd;
+      }
+      .main {
+        text-align: start;
+        margin: 120px 0;
+      }
+      .main h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+      }
+      .main p {
+        font-size: 20px;
+        color: #666;
+        margin-bottom: 30px;
+        width: 560px;
+      }
+      .main img {
+        display: flex;
+        flex-direction: vertical;
+        width: 47%;
+        height: auto;
+        margin-bottom: 30px;
+      }
+      .main-img {
+        display: flex;
+        flex-direction: vertical;
+        justify-content: space-between;
+      }
+      .text {display: flex;
+        flex-direction: vertical;
+        gap: 40px;
+      }
+      @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .nav {
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+    }
+    .nav a {
+      text-align: center;
+      width: 100%;
+    }
+   .text{
+      flex-direction: column;
+    }
+.text{
+      flex: 1 1 100%;
+    }
+  }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">Site Name</div>
+        <nav class="nav">
+          <a href="#">Page</a>
+          <a href="#">Page</a>
+          <a href="#">Page</a>
+          <a class="btn" href="#">Button</a>
+        </nav>
+      </header>
+      <div class="main">
+        <h1>Portfolio Title</h1>
+        <p>
+          A subheading with a brief description of you, your work, and what
+          you’re all about—no biggie
+        </p>
+        <div class="main-img">
+          <img src="women 1.png" alt="" />
+
+          <img src="women 2.png" alt="" />
+        </div>
+        <div class="text">
+          <h2>
+            Project title
+            <p>Description of your first project</p>
+          </h2>
+
+          <h2>
+            Project title
+            <p>Description of your first project</p>
+          </h2>
+      </div>
+        <div class="main-img">
+          <img src="women 3.png" alt="" />
+
+          <img src="women 4.png" alt="" />
+        </div>
+        <div class="text">
+          <h2>
+            Project title
+            <p>Description of your first project</p>
+          </h2>
+
+          <h2>
+            Project title
+            <p>Description of your first project</p>
+          </h2>
+      </div>
+    </div>
+  </body>
+</html>
