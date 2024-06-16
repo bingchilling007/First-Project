@@ -16,6 +16,9 @@ body {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px;
+    border-radius: 25px;
+    border: 2px solid black;
+    box-shadow: 0 0 25px black;
   }
 
   .header,
@@ -107,11 +110,15 @@ body {
     max-width: 600px;
     text-align: center;
     margin-bottom: 20px;
+     border-radius: 25px;
+   
   }
 
   .image-section img {
     max-width: 100%;
     border-radius: 10px;
+    border-radius: 25px;
+    box-shadow: 0 0 25px rgb(73, 9, 185);
   }
 
   .footer {
